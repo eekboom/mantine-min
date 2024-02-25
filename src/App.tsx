@@ -1,7 +1,13 @@
 import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
+import {Box, MantineProvider} from "@mantine/core";
+import {ThemeToggle} from './ThemeToggle';
+import classes from './App.module.css';
 
 export default function App() {
-  return <MantineProvider theme={theme}>App</MantineProvider>;
+    return (
+        <MantineProvider>
+            <ThemeToggle/>
+            <Box className={classes.appHeader}>App</Box>
+        </MantineProvider>
+    );
 }

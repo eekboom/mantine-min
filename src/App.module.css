@@ -1,0 +1,22 @@
+.appHeader {
+    font-weight: bold;
+    font-size: 3rem;
+
+    /* "light-dark" css function works in vite, but breaks parcel: */
+
+    color: light-dark(
+            var(--mantine-color-red-7),
+            var(--mantine-color-gray-2)
+    );
+
+    /* This works with both vite and parcel: */
+    /*
+        @mixin light {
+            color: var(--mantine-color-red-7);
+        }
+        @mixin dark {
+            color: var(--mantine-color-gray-2);
+        }
+    */
+
+}

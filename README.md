@@ -1,5 +1,10 @@
-# Mantine Vite template
+# Mantine Parcel
 
-Get started with the template by clicking `Use this template` button on the top of the page.
+Small example for a mantine web app.
+Both vite and parcel are present, see scripts section in package.json
 
-[Documentation](https://mantine.dev/guides/vite/)
+vite is able to successfully start the application.
+
+parcel fails with `@parcel/transformer-postcss: Cannot read properties of undefined (reading 'input')`.
+This is somehow caused by mantine's "light-dark" postcss function, see App.module.css.
+
