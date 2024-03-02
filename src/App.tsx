@@ -1,12 +1,12 @@
 import "@mantine/core/styles.css";
 import {Box, MantineProvider} from "@mantine/core";
-import {ThemeToggle} from './ThemeToggle';
+import {ThemeSwitch} from './ThemeSwitch';
 import classes from './App.module.css';
 
 export default function App() {
     return (
         <MantineProvider>
-            <ThemeToggle/>
+            <ThemeSwitch/>
             <Box className={classes.appHeader}>App</Box>
         </MantineProvider>
     );
